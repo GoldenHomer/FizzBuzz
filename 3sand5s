@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<button type="button" onclick="fizzBuzzFunction()">Try out FizzBuzz!</button>
+<script>
+function fizzBuzzFunction() {
+    var num = parseInt(prompt("To which number would you like to FizzBuzz to?"),10);
+    for(var i = 1; i <= num; i++){
+        if((i % 3 == 0) && (i % 5 == 0)){
+            document.write("<p>fizzbuzz</p>");
+    }
+    else if(i % 3 == 0){
+        document.write("<p>fizz</p>");
+    }
+    else if(i % 5 == 0){
+        document.write("<p>buzz</p>");
+    }
+    else{
+        document.write("<p>" + i + "</p>");
+    }
+}
+}
+</script>
+</body>
+</html>
